@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div class="timer" id="timer1">00:00</div>
+    </div>
+
+    <div class="timer-container">
+        <div class="timer" id="timer2">00:00</div>
+    </div>
+
+    <div class="timer-container">
+        <div class="controls">
+            <input type="number" id="setTime1" placeholder="Set Time for Timer 1 (seconds)">
+            <input type="number" id="setTime2" placeholder="Set Time for Timer 2 (seconds)">
+            <input type="number" id="numSets" placeholder="Number of Sets">
+            <button class="startButton" id="startButton1">Start Timer</button>
+            <button class="pauseButton" id="pauseButton1">Pause Timer</button>
+            <button class="resetButton" id="resetButton1">Reset Timer</button>
+        </div>
+    </div>
+
+  
+
+    <audio id="beep" src="beep.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

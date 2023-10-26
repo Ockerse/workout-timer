@@ -1,79 +1,40 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 .timer-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    flex-direction: column; /* Stack elements vertically on small screens (mobile) */
+    justify-content: center;
+    align-items: center; /* Center elements horizontally */
+    margin: 0;
+    padding: 10px; /* Add some padding for better mobile appearance */
 }
 
 .timer {
     font-size: 36px;
     margin: 10px;
-    color: #333;
 }
 
 .controls {
     margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-input[type="number"] {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    margin: 5px;
-}
-
-input[type="number"]:focus {
-    outline: none;
-    border-color: #007BFF;
-}
-
-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 .set-counter {
     font-size: 24px;
-    margin-top: 10px;
 }
 
-/* Additional styles for responsiveness */
-/* Media queries for smaller screens (phones) */
+/* Media query for smaller screens (mobile) */
 @media screen and (max-width: 768px) {
-    .timer-container {
-        flex-direction: column; /* Stack elements vertically on small screens */
-        margin: 0; /* Remove margin on small screens */
+    .timer {
+        font-size: 24px; /* Reduce font size for mobile screens */
     }
 
-    .controls {
-        margin: 10px 0; /* Add vertical margin on small screens */
+    .controls input[type="number"] {
+        width: 100%; /* Make input fields take the full width on mobile screens */
     }
 }

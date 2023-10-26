@@ -66,25 +66,14 @@ button:hover {
 }
 
 /* Additional styles for responsiveness */
-@media (max-width: 768px) {
+/* Media queries for smaller screens (phones) */
+@media screen and (max-width: 768px) {
     .timer-container {
-        width: 80%;
+        flex-direction: column; /* Stack elements vertically on small screens */
+        margin: 0; /* Remove margin on small screens */
     }
-}
 
-@media (max-width: 480px) {
-    .timer {
-        font-size: 24px;
-    }
     .controls {
-        flex-direction: column;
-    }
-    input[type="number"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    button {
-        width: 100%;
-        margin: 0;
+        margin: 10px 0; /* Add vertical margin on small screens */
     }
 }
